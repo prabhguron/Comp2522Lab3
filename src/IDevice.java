@@ -13,6 +13,4 @@ abstract class IDevice
     }
 
      abstract void printDetails();
-
-
 }

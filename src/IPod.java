@@ -5,7 +5,7 @@ public class IPod extends IDevice
     private final int numStoredSongs;
     private final double maxVolume;
 
-     IPod(final int numStoredSongs,
+     public IPod(final int numStoredSongs,
           final double maxVolume)
     {
         super(IPodPurpose);
