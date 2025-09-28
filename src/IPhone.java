@@ -1,15 +1,15 @@
 public class IPhone extends IDevice
 {
     private static final String IPhonePurpose = "talking";
-    private  final String Carrier;
+    private  final String carrier;
     private  final double MinutesPhonePlan;
 
 
-    public IPhone(final String Carrier,
-                  final double MinutesPhonePlan)
+    public IPhone(final double MinutesPhonePlan,
+                  final String carrier)
     {
         super(IPhonePurpose);
-        this.Carrier = Carrier;
+        this.carrier = carrier;
         this.MinutesPhonePlan = MinutesPhonePlan;
     }
 
@@ -18,10 +18,10 @@ public class IPhone extends IDevice
     public void printDetails()
     {
         System.out.println(
-                "IPad purpose: " +
+                "IPhone purpose: " +
                             IPhonePurpose +
                             ", minutes remaing: " +
                             MinutesPhonePlan +
-                            ", Carrier: " + Carrier);
+                            ", Carrier: " + carrier);
     }
 }
