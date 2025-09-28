@@ -5,7 +5,8 @@ public class IPad extends IDevice
     private  final String operatingSystem;
 
 
-    public IPad(final boolean hasCase, final String operatingSystem)
+    public IPad(final boolean hasCase,
+                final String operatingSystem)
     {
         super(IPadPurpose);
         this.hasCase = hasCase;
