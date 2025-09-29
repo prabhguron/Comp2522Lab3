@@ -4,6 +4,7 @@ abstract class IDevice
 
     public IDevice(String purpose)
     {
+
         this.purpose = purpose;
     }
 
