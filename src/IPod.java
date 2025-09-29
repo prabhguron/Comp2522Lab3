@@ -1,9 +1,8 @@
 /**
  * The IPod class extends IDevice and represents an iPod device
  * with properties like the number of songs stored and maximum volume level.
- *
- * Demonstrates inheritance, final fields, and method overriding.
  */
+
 public class IPod extends IDevice
 {
     /**
