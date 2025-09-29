@@ -7,11 +7,10 @@ abstract class IDevice
         this.purpose = purpose;
     }
 
-    public final String getPurpose()
+    public String getPurpose(final String purpose)
     {
         return purpose;
     }
-
 
      abstract void printDetails();
 }
