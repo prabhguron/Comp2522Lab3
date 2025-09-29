@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * The IPad class extends IDevice and represents an iPad device
  * with specific properties like whether it has a case and what
@@ -54,4 +56,33 @@ public class IPad extends IDevice
                         ", has case: " + withCase +
                         ", OS: " + operatingSystem);
     }
+
+    /**
+     * Determines whether this IPad is equal to another object.
+     * Two IPad objects are considered equal if they have the same operating
+     * system
+     * @param that the object to compare with this IPad
+     * @return true if the given object is an IPad with the same operating system;
+     *         false otherwise
+     */
+
+    @Override
+    public boolean equals(final Object that)
+    {
+        if (this == that)
+        {
+            return true;
+        }
+
+        if (that == null || getClass() != that.getClass())
+        {
+            return false;
+        }
+
+        final IPad pod = (IPad) that;
+
+        return Objects.equals(operatingSystem, pod.operatingSystem);
+    }
+
+
 }
